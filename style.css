@@ -1,0 +1,266 @@
+/* Google Fonts */
+html{
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fffdf5;
+  color: #333;
+}
+.about-section{
+  padding: 60px 20px;
+  background-color: hwb(57 83% 3%);
+  color:#333;
+  text-align: center;
+}
+.about-section h2{
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #e67e22;
+}
+.about-section p{
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+}
+/* Navbar */
+nav {
+  background-color: #ffe08a;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Chewy', cursive;
+  font-size: 24px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #ff5722;
+}
+
+/* Hero Section */
+.hero {
+  height:100vh;
+  background-image: url('image4.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 100px 20px;
+  color: white;
+  animation: fadeIn 2s ease-in-out;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color:hsl(0, 97%, 47%)
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.cta-buttons .btn {
+  background-color: #ff7043;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  margin: 10px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.cta-buttons .btn:hover {
+  transform: scale(1.05);
+  background-color: #ff5722;
+}
+
+/* Volunteer Form */
+.volunteer-form {
+  background-color: #fff0da;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.volunteer-form h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input, form select {
+  padding: 12px;
+  border: 2px solid #fff0da;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.submit-btn {
+  background-color: #ff7043;
+  color: white;
+  padding: 12px;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #ff5722;
+}
+
+/* Impact Stories */
+.impact-stories {
+  padding: 60px 20px;
+  background-color: #f7dbb1;
+  text-align: center;
+}
+
+.impact-stories h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.story-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: rgba(250, 185, 65, 0.457);
+  padding: 20px;
+  width: 250px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Pet Carousel */
+.pet-carousel {
+  padding: 60px 20px;
+  background-color:hsl(36, 39%, 45%);
+  text-align: center;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 20px 0;
+  scroll-snap-type: x mandatory;
+}
+
+.pet-card {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  background-color: hwb(0 86% 3%);
+  padding: 20px;
+  width: 200px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.pet-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+/*contact-section*/
+.contact-section {
+  background-color: #fdf6f0;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  color: #ff6b6b;
+  margin-bottom: 20px;
+}
+
+.contact-section p {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+.contact-info p a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-info p a:hover {
+  text-decoration: underline;
+  color: #ff6b6b;
+}
+
+/* Footer */
+footer {
+  background-color: hsl(44, 83%, 79%);
+  text-align: center;
+  padding: 20px;
+  font-weight: 500;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 36px;
+  }
+  .story-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

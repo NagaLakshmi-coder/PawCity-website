@@ -1,0 +1,23 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "axe/forms": [
+      "default",
+      {
+        "select-name": "off"
+      }
+    ],
+    "disown-opener": "off",
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "background-color: lab(93.59% -27.59 90.44)",
+          "background-color: lab(76.6% 12.44 65.67 / 0.457)"
+        ]
+      }
+    ]
+  }
+}
